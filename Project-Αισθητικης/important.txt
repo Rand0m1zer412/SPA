@@ -1,0 +1,34 @@
+// creating all trs
+for (let i = 0; i < 1; i++) {
+  // creates a table row
+  const row = document.createElement("tr");
+  // creates a table row
+  const head = document.createElement("th");
+  for (const values in data) {
+    // Create a <td> element and a text node, make the text
+    // node the contents of the <td>, and put the <td> at
+    // the end of the table row
+    const th =document.createElement("th");
+    const cellHeads = document.createTextNode(values);
+    th.appendChild(cellHeads);
+    head.appendChild(th);
+    const td = document.createElement("td");
+    const cellText = document.createTextNode(data[values]);
+    td.appendChild(cellText);
+    row.appendChild(td);
+  }
+
+  // add the row to the end of the table body
+  tblBody.appendChild(row);
+  tblHead.appendChild(head);
+}
+
+// put the <tbody> in the <table>
+tbl.appendChild(tblBody);
+tbl1.appendChild(tblHead);
+// appends <table> into <body>
+document.body.appendChild(tbl);
+document.body.appendChild(tbl1);
+// sets the border attribute of tbl to '2'
+tbl1.setAttribute("border", "10");
+tbl.setAttribute("border", "10");

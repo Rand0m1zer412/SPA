@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>HomePage</title>
+   <link rel="stylesheet" type="text/css"  media="screen"/> 
+  </head>
+  <body>
+    <header>
+        <h1 style="color:MediumSeaGreen;">Welcome Summoners</h1>
+    </header>
+    <form id="form1" class="input-group">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" class="input-field"><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" class="input-field"><br><br>
+        <label for="email">E-mail:</label><br>
+        <input type="text" id="email" class="input-field"><br><br>
+        <input class="submit-btn" type="button" value="Submit-Form" id="submit"> 
+    </form>
+    <div id="b1">
+        <button id="b1"> Submit </button>
+            <form id="form2" class="input-group" style="display:none;">
+                <label for="fname2">First name:</label><br>
+                <input type="text" id="fname2" name="fname2"><br><br>
+                <label for="lname2">Last name:</label><br>
+                <input type="text" id="lname2" name="lname2"><br><br>
+                <label for="email2">Email:</label><br>
+                <input type="text" id="email2" name="email2"><br><br>
+                <label for="Therapy">Therapy:</label>
+                <select id="Therapy" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select><br><br>
+                <label for="Comments">Comments for Therapy:</label><br>
+                <textarea name="message" rows="10" cols="30">Type the therapy of the patient.</textarea><br><br>
+                <label for="Next Appointment">Next Appointment:</label><br>
+                <input  type="date" id="appntm" name="appntm"><br><br>
+                <button type="submit"> Click </button>
+            </form> 
+    </div>   
+    <br><br>        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="Fpage.js"></script>
+  </body>
+</html>
